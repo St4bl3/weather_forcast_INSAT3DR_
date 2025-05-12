@@ -1,0 +1,180 @@
+/* Base & Typography */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.container {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.channel-list {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.channel-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #333;
+}
+
+/* File Input */
+input[type="file"] {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+/* Flash Messages */
+.flashes {
+  list-style: none;
+  color: #c00;
+  margin-top: 1rem;
+}
+
+/* Results Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.item {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.caption {
+  margin-top: 0.75rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.desc {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #fafafa;
+  color: #222;
+  margin: 0; padding: 0;
+  font-size: 18px;
+}
+.container {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+.date-info {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Comparison grid */
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.item {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.comp-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.comp-image {
+  flex: 1;
+  text-align: center;
+}
+.comp-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.caption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.caption.small {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+.desc {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.75rem;
+}
+
+/* Buttons */
+/* .btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #333;
+}
+ */

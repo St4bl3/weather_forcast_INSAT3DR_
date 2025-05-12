@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>INSAT-3D Next-Day Forecast</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>INSAT-3D Next-Day Forecast</h1>
+      <p class="description">
+        This application predicts tomorrow’s satellite measurements over India.
+        Upload a Level-1C HDF5 file (.h5), and the model will forecast the
+        next-day values for:
+      </p>
+      <div class="channel-list">
+        {% for ch, desc in channel_info.items() %}
+        <div class="channel-item"><strong>{{ ch }}:</strong> {{ desc }}</div>
+        {% endfor %}
+      </div>
+      <form method="post" enctype="multipart/form-data">
+        <label for="file">Choose INSAT-3D .h5 file:</label><br />
+        <input type="file" id="file" name="file" accept=".h5" required />
+        <button class="btn" type="submit">Predict Next Day</button>
+      </form>
+      {% with messages = get_flashed_messages() %} {% if messages %}
+      <ul class="flashes">
+        {% for msg in messages %}
+        <li>{{ msg }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% endwith %}
+    </div>
+  </body>
+</html>
